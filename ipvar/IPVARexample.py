@@ -10,14 +10,14 @@ import os
 import numpy as np
 import pandas as pd
 from time import time
-from paneldiff import paneldiff
-from interactPVAR import interactPVAR
-from evalpvar import evalpvar
-from irfpreppvar import irfpreppvar
-from IRFcreator import IRFcreator
-from IPVARboot import IPVARboot
-from IRF_IPVAR import IRF_IPVAR
-from util import plotCharts
+from .paneldiff import paneldiff
+from .interactPVAR import interactPVAR
+from .evalpvar import evalpvar
+from .irfpreppvar import irfpreppvar
+from .IRFcreator import IRFcreator
+from .IPVARboot import IPVARboot
+from .IRF_IPVAR import IRF_IPVAR
+from .util import plotCharts
 
 ## SET WORKING DIRECTORY
 fpath = os.path.dirname(os.path.abspath(__file__))

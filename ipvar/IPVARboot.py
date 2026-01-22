@@ -41,9 +41,9 @@
 #
 import numpy as np
 import random
-from gapfill import gapfill
-from paneldetrend import paneldetr
-from interactPVAR import interactPVAR
+from .gapfill import gapfill
+from .paneldetrend import paneldetr
+from .interactPVAR import interactPVAR
 
 def IPVARboot(parametric,positioner,Idata,ydata,errors,beta,number,I,lag,restr,hominterc,demean):
     #

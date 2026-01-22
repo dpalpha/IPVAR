@@ -27,11 +27,11 @@
 # Translated to Python by A. Goumilevski - 05.01.2023
 #
 import numpy as np
-from evalpvar import evalpvar
-from irfpreppvar import irfpreppvar
-from IRFcreator import IRFcreator
-from vardecomp import vardecomp
-from minprctile import minprctile
+from .evalpvar import evalpvar
+from .irfpreppvar import irfpreppvar
+from .IRFcreator import IRFcreator
+from .vardecomp import vardecomp
+from .minprctile import minprctile
 
 def IRF_IPVAR(nint,BETAMAT,ERRORMAT,lag,values,period,pct,centered):
     # ADVANCED BOOTSTRAP METHOD
