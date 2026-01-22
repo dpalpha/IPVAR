@@ -17,7 +17,7 @@ classifiers=[
 ]
 
 packages = [
-    { include = "src", format = ["sdist", "wheel"] }
+    { include = "ipvar", format = ["sdist", "wheel"] }
 ]
 
 include = [
@@ -36,7 +36,7 @@ Repository = "https://github.com/gumilevskij/IPVAR.git"
 python =  "^3.10"
 pandas =  "^2.1.4"
 scipy =  "^1.11.4"
-numpy =  "^1.26.4"
+numpy =  "^1.26.4 || ^2.0.0"
 matplotlib =  "3.10.0"
 
 
