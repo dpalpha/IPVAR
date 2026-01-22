@@ -20,8 +20,21 @@ from .IRF_IPVAR import IRF_IPVAR
 from .util import plotCharts
 
 ## SET WORKING DIRECTORY
-fpath = os.path.dirname(os.path.abspath(__file__))
-working_dir = os.path.abspath(os.path.join(fpath,"../"))
+try:
+    # Works when running as a script
+    fpath = os.path.dirname(os.path.abspath(__file__))
+    working_dir = os.path.abspath(os.path.join(fpath,"../"))
+except NameError:
+    # Works when running in Jupyter/IPython - use current directory or find project root
+    working_dir = os.getcwd()
+    # If we're in ipvar directory, go up one level
+    if os.path.basename(working_dir) == "ipvar":
+        working_dir = os.path.dirname(working_dir)
+    # If data directory doesn't exist, try going up one more level
+    if not os.path.exists(os.path.join(working_dir, "data")):
+        parent_dir = os.path.dirname(working_dir)
+        if os.path.exists(os.path.join(parent_dir, "data")):
+            working_dir = parent_dir
 os.chdir(working_dir)
 
 t0 = time()
