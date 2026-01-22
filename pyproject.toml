@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "IPVAR"
-version = "1.0.0"
+version = "1.0.1"
 description = "Interacted Panel VAR Toolbox"
 authors = ["Alexei Goumilevski <agoumilevski@hotmail.com>"]
 maintainers = ["Alexei Goumilevski <Agoumilevski@hotmail.com>"]
@@ -36,7 +36,7 @@ Repository = "https://github.com/gumilevskij/IPVAR.git"
 python =  "^3.10"
 pandas =  "^2.1.4"
 scipy =  "^1.11.4"
-numpy =  "1.26.4"
+numpy =  "^1.26.4"
 matplotlib =  "3.10.0"
 
 
